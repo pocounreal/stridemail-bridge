@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: stridemail-bridge
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: STRICT_TLS
+        value: "false"
+      - key: SESSION_TTL_HOURS
+        value: "8"
+      # Opcional: pon aquí la URL de tu StrideMail para restringir CORS.
+      # Si la dejas vacía, el puente acepta peticiones de cualquier origen.
+      - key: ALLOWED_ORIGIN
+        value: ""

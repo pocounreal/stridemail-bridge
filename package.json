@@ -1,0 +1,1 @@
+{"dependencies":{"cors":"^2.8.5","express":"^4.21.2","imapflow":"^1.0.174","mailparser":"^3.7.2","nodemailer":"^6.9.16"},"description":"Puente IMAP/SMTP para StrideMail — mail.rentcar.rent (IMAP 993 / SMTP 465). Solo rentcar.rent.","engines":{"node":">=20"},"main":"server.js","name":"stridemail-bridge","scripts":{"start":"node server.js"},"type":"commonjs","version":"1.0.0"}
